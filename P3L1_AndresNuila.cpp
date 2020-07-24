@@ -24,9 +24,20 @@ int main()
         break;
     case 2:
         int valorN;
+        double operador1, operador2, resultFinal, calculo;
+        resultFinal = 0;
+        calculo = 0;
         cout << "Ingrese el valor de n para la sumatoria";
+        cout << endl;
         cin >> valorN;
-
+        for (int i = 0; i <= valorN; i++)
+        {
+            operador1 = (2 * i) - 1;
+            operador2 = (2 * i) + 1;
+            calculo = operador1 * operador2;
+            resultFinal = resultFinal + calculo;
+        }
+        cout << "El resultado es: " << resultFinal;
     default:
         break;
     }
